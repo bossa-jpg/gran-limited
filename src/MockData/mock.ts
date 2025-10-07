@@ -30,8 +30,7 @@ export const mockAccounts: Array<TradingAccount> = [
 			{ timestamp: 8, value: 50 },
 		],
 	},
-  
-	{ 
+	{
 		type: "StandardTradingAccount",
 		id: "12345",
 		active: true,
