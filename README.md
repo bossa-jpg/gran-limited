@@ -1,2 +1,0 @@
-# gran-limited
-Project repository
