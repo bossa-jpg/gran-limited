@@ -1,8 +1,8 @@
 export interface LanguageOption {
-  code: string;
-  name: string;
+	code: string;
+	name: string;
 }
 
 export interface HeaderProps {
-  title?: string;
+	title?: string;
 }
