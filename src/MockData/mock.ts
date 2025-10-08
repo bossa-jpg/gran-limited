@@ -3,17 +3,26 @@ import type { TradingAccount } from "../MainContent/types";
 export const mockAccounts: Array<TradingAccount> = [
 	// {
 	//   type: 'StandardTradingAccount',
-	//   id: '12345',
+	//   id: '128368345',
 	//   active: true,
 	//   demo: false,
 	//   equity: 12500.50,
 	//   currency: 'USD',
 	//   leverage: 100,
-	//   data: [{ timestamp: 1, value: 100 }, { timestamp: 2, value: 105 }]
+	//   data: [
+  //     { timestamp: 1, value: 100 },
+	// 		{ timestamp: 2, value: 105 },
+	// 		{ timestamp: 3, value: 88 },
+	// 		{ timestamp: 4, value: 23 },
+	// 		{ timestamp: 5, value: 96 },
+	// 		{ timestamp: 6, value: 105 },
+	// 		{ timestamp: 7, value: 100 },
+	// 		{ timestamp: 8, value: 120 }
+  //   ]
 	// },
 	{
 		type: "StandardTradingAccount",
-		id: "12345",
+		id: "1234345",
 		active: true,
 		demo: false,
 		equity: 12500.5,
@@ -32,7 +41,7 @@ export const mockAccounts: Array<TradingAccount> = [
 	},
 	{
 		type: "StandardTradingAccount",
-		id: "12345",
+		id: "68412345",
 		active: true,
 		demo: false,
 		equity: 12500.5,
@@ -51,7 +60,7 @@ export const mockAccounts: Array<TradingAccount> = [
 	},
 	{
 		type: "StandardTradingAccount",
-		id: "12345",
+		id: "12308445",
 		active: true,
 		demo: false,
 		equity: 12500.5,
@@ -70,7 +79,7 @@ export const mockAccounts: Array<TradingAccount> = [
 	},
 	{
 		type: "StandardTradingAccount",
-		id: "12345",
+		id: "1256252345",
 		active: true,
 		demo: false,
 		equity: 12500.5,
@@ -108,7 +117,7 @@ export const mockAccounts: Array<TradingAccount> = [
 	},
 	{
 		type: "StandardTradingAccount",
-		id: "55555",
+		id: "55523555",
 		active: true,
 		demo: true,
 		equity: 10000,

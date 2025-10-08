@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Biom examle app
+# React + TypeScript + Vite + Biome examle app
 
 ## Url:
 

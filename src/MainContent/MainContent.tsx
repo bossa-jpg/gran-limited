@@ -1,6 +1,7 @@
 import {
   Alert,
   Box,
+  Button,
   Container,
   Grid,
   Modal,
@@ -16,8 +17,6 @@ export const MainContent: React.FC = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [notificationOpen, setNotificationOpen] = useState(false);
 
-  const test = setAccounts;
-  console.log(test);
   const activeAccountsCount = accounts.filter(
     (account) =>
       account.type === "StandardTradingAccount" &&
@@ -25,12 +24,18 @@ export const MainContent: React.FC = () => {
       !account.demo
   ).length;
 
-  const handleAddAccountClick = () => {
+  const handleAddAccountCard = () => {
     if (activeAccountsCount < 5) {
       setModalOpen(true);
     } else {
       setNotificationOpen(true);
     }
+  };
+
+  const handleAddButtonModal = () => {
+    setAccounts([...accounts]);
+    setModalOpen(false);
+    console.log("Add new account");
   };
 
   const handleCloseNotification = () => {
@@ -64,7 +69,7 @@ export const MainContent: React.FC = () => {
         >
           <AddAccountCard
             activeAccountsCount={activeAccountsCount}
-            onAddClick={handleAddAccountClick}
+            onAddClick={handleAddAccountCard}
           />
         </Grid>
       </Grid>
@@ -81,8 +86,8 @@ export const MainContent: React.FC = () => {
           variant="filled"
           sx={{ width: "100%" }}
         >
-          Добавлять новые счета можно только при количестве активных счетов
-          меньше 5
+          New accounts can only be added if the number of active accounts is
+          less than 5.
         </Alert>
       </Snackbar>
 
@@ -104,13 +109,19 @@ export const MainContent: React.FC = () => {
             p: 4,
           }}
         >
-          {/* Здесь будет содержимое модального окна */}
           <Typography variant="h6" component="h2" gutterBottom>
-            Добавление нового счета
+            Add a new account
           </Typography>
           <Typography>
-            Модальное окно для создания нового счета будет здесь...
+            The modal window for creating a new account will be here...
           </Typography>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => handleAddButtonModal()}
+          >
+            Add
+          </Button>
         </Box>
       </Modal>
     </Container>
